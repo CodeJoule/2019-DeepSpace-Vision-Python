@@ -12,9 +12,9 @@ class GripPipeline:
         """initializes all values to presets or None if need to be set
         """
 
-        self.__hsv_threshold_hue = [64.56187566324907, 87.66194106547279]
-        self.__hsv_threshold_saturation = [96.31294964028777, 255.0]
-        self.__hsv_threshold_value = [128.4172661870504, 255.0]
+        self.__hsv_threshold_hue = [0.0, 180.0]
+        self.__hsv_threshold_saturation = [0.0, 96.97792869269949]
+        self.__hsv_threshold_value = [240.78237410071944, 255.0]
 
         self.hsv_threshold_output = None
 
@@ -131,3 +131,6 @@ class GripPipeline:
                 continue
             output.append(contour)
         return output
+
+
+
